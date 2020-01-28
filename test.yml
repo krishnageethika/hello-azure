@@ -44,7 +44,7 @@ stages:
 
     - task: AzureWebApp@1
       inputs:
-#         azureSubscription: 'Visual Studio Enterprise – MPN ( 4170ffee-a940-479b-988c-50f869a6b94d )'
+        azureSubscription: 'Visual Studio Enterprise – MPN ( 4170ffee-a940-479b-988c-50f869a6b94d )'
         appType: 'webAppLinux'
         appName: 'springbootdeploy'
         deployToSlotOrASE: true
