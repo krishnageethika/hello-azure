@@ -13,10 +13,10 @@ variables:
   azureSubscription: ''
   
   # Web app name
-  webAppName: 'testspringbootdeploy'
+  webAppName: ''
 
   # Environment name
-  environmentName: 'testspringbootdeploy'
+  environmentName: ''
   
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -61,7 +61,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: testspringbootdeploy'
+            displayName: 'Azure Web App Deploy: '
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
