@@ -10,13 +10,13 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: 'cdba53da-222e-461b-b6cd-22a7938c2795'
+  azureSubscription: ''
   
   # Web app name
-  webAppName: 'springbootdeploy'
+  webAppName: ''
 
   # Environment name
-  environmentName: 'springbootdeploy'
+  environmentName: ''
   
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -63,7 +63,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure Web App Deploy:springbootdeploy '
             inputs:
-              azureSubscription: 'Visual Studio Enterprise – MPN ( 4170ffee-a940-479b-988c-50f869a6b94d )'
+              azureSubscription: ''
               appType: webAppLinux
               appName: $(webAppName)
               package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
